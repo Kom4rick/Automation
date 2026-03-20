@@ -1,3 +1,5 @@
+package Homework1;
+
 public class Main {
     public static void main(String[] args) {
         //Практика 1 и 2
