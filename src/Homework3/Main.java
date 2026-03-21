@@ -1,46 +1,45 @@
 package Homework3;
 
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         //Практика 1
-//        for (int i = 0; i < 5; i++) {
-//            int random = new Random().nextInt() + 1;
-//            System.out.println(Math.abs(random * random));
-//        }
+        for (int i = 0; i < 5; i++) {
+            int random = new Random().nextInt() + 1;
+            System.out.println(Math.abs(random * random));
+        }
         //Практика 2
-//        String[] fruits = {"Yablocko", "Grusha", "Apelsin", "Banan"};
-//        System.out.println(fruits[1] + " " + fruits[3]);
-//        System.out.println(fruits.length);
-//        fruits[2] = "Yablocko";
-//        System.out.println(fruits[2]);
+        String[] fruits = {"Yablocko", "Grusha", "Apelsin", "Banan"};
+        System.out.println(fruits[1] + " " + fruits[3]);
+        System.out.println(fruits.length);
+        fruits[2] = "Yablocko";
+        System.out.println(fruits[2]);
         //Практика 3
         Scanner scanner = new Scanner(System.in);
-//        System.out.println("Vvedite razmer massiva");
-//        int[] arr = new int[scanner.nextInt()];
-//        for (int i = 0; i < arr.length; i++) {
-//            int random = new Random().nextInt(9) + 1;
-//            arr[i] = random;
-//        }
-//        //3.2
-//        for (int i = 0; i < arr.length; i++) {
-//            System.out.print(arr[i] + " ");
-//        }
-//        //3.3
-//        System.out.println();
-//        for (int i = 2; i < arr.length; i+=2) {
-//            arr[i] = Math.abs(arr[i] * arr[i]);
-//        }
-//        for (int i = 0; i < arr.length; i++) {
-//            System.out.print(arr[i] + " ");
-//        }
-//        System.out.println();
-//        for (int i = arr.length - 1; i >= 0; i--) {
-//            System.out.print(arr[i] + " ");
-//        }
+        System.out.println("Vvedite razmer massiva");
+        int[] arr = new int[scanner.nextInt()];
+        for (int i = 0; i < arr.length; i++) {
+            int random = new Random().nextInt(9) + 1;
+            arr[i] = random;
+        }
+        //3.2
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        //3.3
+        System.out.println();
+        for (int i = 2; i < arr.length; i += 2) {
+            arr[i] = Math.abs(arr[i] * arr[i]);
+        }
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
 
         //Задача 1
         System.out.println("Vvedite razmer massiva");
@@ -77,7 +76,7 @@ public class Main {
         // Задача 4
         int count = 0;
         for (int i = 0; i < arr1.length; i++) {
-            if(arr1[i] == 0){
+            if (arr1[i] == 0) {
                 count++;
             }
         }
@@ -103,7 +102,7 @@ public class Main {
         // Задача 6
         int c = Integer.MIN_VALUE;
         for (int i = 0; i < arr1.length; i++) {
-            if (arr1[i] > c){
+            if (arr1[i] > c) {
                 c = arr1[i];
             } else {
                 System.out.println("Massive ne yavlyaetsa vozrastayushei posledovatelnost'yu");
@@ -111,6 +110,5 @@ public class Main {
             }
         }
         System.out.println("Massive yavlyaetsa vozrastayushei posledovatelnost'yu");
-
     }
 }
