@@ -14,6 +14,10 @@ public class CreditCard {
     }
 
     public void withdraw(int money) {
+        if (money > dep){
+            System.out.println("Nelzya snat' bolshe chem est' na schetu");
+            return;
+        }
         dep -= money;
     }
 
