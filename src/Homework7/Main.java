@@ -13,10 +13,10 @@ public class Main {
         //zadacha_2(stroki);
         //zadacha_3(stroki);
         //zadacha_4(stroki);
-        zadacha_5(str);
+        //zadacha_5(str);
     }
 
-    public static void zadacha_1(String[] stroki) {
+    public static void longAndShort(String[] stroki) {
         String dlinnaya = stroki[0];
         String korotkaya = stroki[0];
         for (int i = 1; i < stroki.length; i++) {
@@ -31,7 +31,7 @@ public class Main {
         System.out.println(korotkaya + " " + korotkaya.length());
     }
 
-    public static void zadacha_2(String[] stroki) {
+    public static void ordering(String[] stroki) {
         for (int i = 0; i < stroki.length - 1; i++) {
             for (int j = 0; j < stroki.length - 1 - i; j++) {
                 if (stroki[j].length() > stroki[j + 1].length()) {
@@ -47,7 +47,7 @@ public class Main {
         }
     }
 
-    public static void zadacha_3(String[] stroki) {
+    public static void lessThanAvg(String[] stroki) {
         int sum = 0;
         for (int i = 0; i < stroki.length; i++) {
             sum += stroki[i].length();
@@ -59,7 +59,7 @@ public class Main {
         }
     }
 
-    public static void zadacha_4(String[] stroki) {
+    public static void firstWithoutDuplicates(String[] stroki) {
         for (int i = 0; i < stroki.length; i++) {
             String str = "";
             for (int j = 0; j < stroki[i].length(); j++) {
@@ -74,7 +74,7 @@ public class Main {
         }
     }
 
-    public static void zadacha_5(String str) {
+    public static void doubleLetters(String str) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < str.length(); i++) {
             sb.append(str.charAt(i));
